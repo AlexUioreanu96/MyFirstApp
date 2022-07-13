@@ -1,9 +1,12 @@
 package com.example.myfirstapp
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+
+const val TAG = "Log files"
 
 class DisplayMessageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +19,8 @@ class DisplayMessageActivity : AppCompatActivity() {
         //takes the msg and populate it in the view
         val textView = findViewById<TextView>(R.id.textView).apply {
             text = message
+
+            Log.v(TAG, "You set the view")
         }
 
         val imageView = findViewById<ImageView>(R.id.imgV)
