@@ -18,12 +18,12 @@ class MainActivity : AppCompatActivity() {
     fun sendMessage(view: View) {
         val editText = findViewById<EditText>(R.id.editTextTextPersonName)
         val message = editText.text.toString()
-        if (message == "1" || message == "2") {
+        if (message == "1" || message == "2" || message == "3") {
             val i = Intent(this, DisplayMessageActivity::class.java)
             i.putExtra(EXTRA_MESSAGE, message)
             startActivity(i)
         } else {
-            editText.error = "Poti adauga doar 1 sau 2 :D"
+            editText.error = "Poti adauga doar 1, 2 sau 3 :D"
         }
     }
 }

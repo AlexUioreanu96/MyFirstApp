@@ -28,6 +28,7 @@ class DisplayMessageActivity : AppCompatActivity() {
         when (message) {
             "1" -> imageView.setImageResource(R.drawable.ic_baseline_airplanemode_active_24)
             "2" -> imageView.setImageResource(R.drawable.ic_baseline_adb_24)
+            "3" -> imageView.setImageResource(R.drawable.ic_baseline_android_24)
         }
     }
 }
